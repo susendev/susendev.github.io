@@ -1,6 +1,10 @@
+---
+title: ubuntu-swift
+tags:
+---
 个人准备着一个小项目，但涉及到一些后端要处理的东西，作为一个 iOS 开发者，又有一台搬瓦工小机器，就想着使用 swift 做一下后端。
-    
-## 安装 Swift 
+
+## 安装 Swift
 
 这台机器本来是用来实现无障碍访问互联网的，开始系统为 Centos-7-bbr 的，但要在 Centos 上安装 swift 是比较麻烦的，只能换 Ubuntu-16.04,奈何 16.04 的版本想要换内核开启 bbr 的时候怎么也启动不起来，只能换成了 14.04 来开启 bbr，速度杠杠的。
 
@@ -11,42 +15,50 @@
 ``` bash
 sudo apt-get install clang libicu-dev
 ```
+
 下载 swift：
 
 ``` bash
 wget https://swift.org/builds/swift-4.1-release/ubuntu1404/swift-4.1-RELEASE/swift-4.1-RELEASE-ubuntu14.04.tar.gz
 ```
+
 解压：
 
 ``` bash
 tar xzf swift-4.1-RELEASE-ubuntu14.04.tar.gz
 ```
+
 配置环境变量：
 
 ``` bash
 vim ~/.bashrc
 ```
+
 在最后一行添加：
 
 ``` bash
 export PATH=~/swift-4.1-RELEASE-ubuntu14.04/usr/bin:"${PATH}"
 ```
+
 使之生效：
 
 ``` bash
 source ~/.bashrc
 ```
+
 验证是否安装成功：
 
 ``` bash
 swift --version
 ```
+
 成功输出：
 
 ``` bash
 Swift version 4.1 (swift-4.1-RELEASE)
 Target: x86_64-unknown-linux-gnu
 ```
+
 则表示安装完成。
 
 ``` bash
@@ -92,5 +104,3 @@ public func EVP_aes_256_cbc_hmac_sha1() -> UnsafePointer<EVP_CIPHER>!
                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 error: terminated(1): /root/swift-4.0-RELEASE-ubuntu14.04/usr/bin/swift-build-tool -f /root/MyAwesomeProject/.build/debug.yaml main
 ```
-
-
