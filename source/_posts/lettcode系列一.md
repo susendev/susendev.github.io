@@ -1,6 +1,7 @@
 ---
-title: 每天一道 LeetCode【01.两数之和】
+title: LeetCode【01.两数之和】
 date: 2019-04-14 22:43:12
+categories: leetcode
 tags: 两数之和
 ---
 ## 题
