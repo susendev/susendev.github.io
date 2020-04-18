@@ -1,0 +1,196 @@
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# See: https://theme-next.org/docs/getting-started/
+# ---------------------------------------------------------------
+
+favicon:
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2017
+
+  # If not defined, `author` from Hexo main config will be used.
+  copyright: Matthew
+
+  beian:
+    enable: true
+    icp: 豫ICP备20009856号-1
+
+# `Follow me on GitHub` banner in the top-right corner.
+github_banner:
+  enable: true
+  permalink: https://github.com/shushengwang
+  title: Follow me on GitHub
+
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+baidu_push: true
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
+# Usage: `Key: /link/ || icon`
+# Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
+# Value before `||` delimeter is the target link.
+# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+# External url should start with http:// or https://
+menu:
+  home: / || home
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  # commonweal: /404/ || heartbeat
+  # about: /about/ || user
+
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+# Schemes
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
+
+darkmode: true
+
+# Social Links
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimeter is the target permalink.
+# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+social:
+  GitHub: https://github.com/shushengwang || github
+  E-Mail: mailto:wangshusheng@live.cn || envelope
+  #Weibo: https://weibo.com/yourname || weibo
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  #Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype
+
+# Sidebar Avatar
+avatar:
+  url: /uploads/avatar.jpeg
+  opacity: .61
+
+# Post wordcount display settings
+# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  item_text_total: true
+  awl: 4
+  wpm: 275
+
+
+# Bookmark Support
+# Dependencies: https://github.com/theme-next/theme-next-bookmark
+bookmark:
+  enable: true
+  # If auto, save the reading position when closing the page or clicking the bookmark-icon.
+  # If manual, only save it by clicking the bookmark-icon.
+  save: auto
+
+# Reading progress bar
+# Dependencies: https://github.com/theme-next/theme-next-reading-progress
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+
+# Valine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://valine.js.org
+valine:
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid: 2ojXGj9KOGSlXIeNTQrSv3ms-gzGzoHsz # your leancloud application appid
+  appkey: y4RXixx8mnLOzc4ypQr60BQN # your leancloud application appkey
+  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Just go go # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+  language: zh-cn # language, available values: en, zh-cn
+  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  recordIP: true
+  comment_count: true # if false, comment count will only be displayed in post page, not in home page
+
+# LiveRe comments system
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+#livere_uid: your uid
+
+# Gitment
+# Introduction: https://github.com/imsun/gitment
+gitment:
+  enable: false
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: # MUST HAVE, Your Github Username
+  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: # MUST HAVE, Github client id for the Gitment
+  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+
+# Gitalk
+# Demo: https://gitalk.github.io
+gitalk:
+  enable: false
+  github_id:  # Github repo owner
+  repo:  # Repository name to store issues
+  client_id:  # Github Application Client ID
+  client_secret:  # Github Application Client Secret
+  admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+  distraction_free_mode: true # Facebook-like distraction free mode
+  # Gitalk's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
+  language:
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+# Baidu Analytics ID
+baidu_analytics: 71d4828cdceba419bd1e6490fff8e150
+
+# Growingio Analytics ID
+# Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
+#growingio_analytics: #your projectId
+
+# Google Analytics
+google_analytics:
+ tracking_id: UA-139330210-1
+ localhost_ignored: true
+
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn to get AppID and AppKey.
+leancloud_visitors:
+  enable: true
+  app_id: #<app_id>
+  app_key: #<app_key>
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in leancloud counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
+  security: true
+  betterPerformance: false

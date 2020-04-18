@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Matthew's blog
+title: Remember Nothing
 subtitle: 你的指尖，有改变世界的力量
-description: 王树生 iOS
+description: Matthew
 author: Matthew
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wangshusheng.cc
+url: https://www.jibuzhu.xyz
 root: /
 permalink: :year/:month/:day/:title.html
 permalink_defaults:
@@ -79,5 +79,6 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/shushengwang/shushengwang.github.io.git
+  repo: git@111.229.57.242:/home/git/projects/hexo.git
+  #repo: https://github.com/shushengwang/shushengwang.github.io.git
   branch: [master]
