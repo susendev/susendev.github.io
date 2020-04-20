@@ -186,7 +186,7 @@ gitalk:
 # ---------------------------------------------------------------
 
 # Baidu Analytics ID
-baidu_analytics: 71d4828cdceba419bd1e6490fff8e150
+baidu_analytics: be05ed1d179f82eb70cf35b18084ea80
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -197,6 +197,7 @@ google_analytics:
  tracking_id: UA-139330210-1
  localhost_ignored: true
 
+tencent_analytics: 66546346
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
