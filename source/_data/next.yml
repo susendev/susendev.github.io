@@ -3,6 +3,7 @@
 # Site Information Settings
 # See: https://theme-next.org/docs/getting-started/
 # ---------------------------------------------------------------
+reminder: true
 
 favicon:
   small: /images/favicon-16x16.png
@@ -27,20 +28,9 @@ github_banner:
   title: Follow me on GitHub
 
 codeblock:
-  # Code Highlight theme
-  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
-  # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night eighties
-  # Add copy button on codeblock
   copy_button:
-    enable: false
-    # Show text copy result.
-    show_result: false
-    # Available values: default | flat | mac
-    style:
-# ---------------------------------------------------------------
-# SEO Settings
-# ---------------------------------------------------------------
+    enable: true
+    show_result: true
 
 baidu_push: true
 
@@ -48,9 +38,6 @@ auto_excerpt:
   enable: true
   length: 150
 
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # Usage: `Key: /link/ || icon`
@@ -66,7 +53,7 @@ menu:
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   # commonweal: /404/ || heartbeat
-  # about: /about/ || user
+  about: /about/ || user
 
 
 # ---------------------------------------------------------------
@@ -111,15 +98,6 @@ symbols_count_time:
   awl: 4
   wpm: 275
 
-
-# Bookmark Support
-# Dependencies: https://github.com/theme-next/theme-next-bookmark
-bookmark:
-  enable: true
-  # If auto, save the reading position when closing the page or clicking the bookmark-icon.
-  # If manual, only save it by clicking the bookmark-icon.
-  save: auto
-
 # Reading progress bar
 # Dependencies: https://github.com/theme-next/theme-next-reading-progress
 reading_progress:
@@ -127,63 +105,10 @@ reading_progress:
   color: "#37c6c0"
   height: 2px
 
-# Valine
-# You can get your appid and appkey from https://leancloud.cn
-# More info available at https://valine.js.org
-valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid: 2ojXGj9KOGSlXIeNTQrSv3ms-gzGzoHsz # your leancloud application appid
-  appkey: y4RXixx8mnLOzc4ypQr60BQN # your leancloud application appkey
-  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
-  language: zh-cn # language, available values: en, zh-cn
-  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-  recordIP: true
-  comment_count: true # if false, comment count will only be displayed in post page, not in home page
-
-# LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
-
-# Gitment
-# Introduction: https://github.com/imsun/gitment
-gitment:
-  enable: false
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-  count: true # Show comments count in post meta area
-  lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github Username
-  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
-  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
-
-# Gitalk
-# Demo: https://gitalk.github.io
-gitalk:
-  enable: false
-  github_id:  # Github repo owner
-  repo:  # Repository name to store issues
-  client_id:  # Github Application Client ID
-  client_secret:  # Github Application Client Secret
-  admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
-  distraction_free_mode: true # Facebook-like distraction free mode
-  # Gitalk's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
-  language:
-
-# ---------------------------------------------------------------
-# Statistics and Analytics
-# See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
-# ---------------------------------------------------------------
+disqus:
+  enable: true
+  shortname: jibuzhu
+  count: false
 
 # Baidu Analytics ID
 baidu_analytics: be05ed1d179f82eb70cf35b18084ea80
@@ -198,14 +123,6 @@ google_analytics:
  localhost_ignored: true
 
 tencent_analytics: 66546346
-# Show number of visitors to each article.
-# You can visit https://leancloud.cn to get AppID and AppKey.
-leancloud_visitors:
+
+local_search:
   enable: true
-  app_id: #<app_id>
-  app_key: #<app_key>
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in leancloud counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
-  betterPerformance: false
