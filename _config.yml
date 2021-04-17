@@ -82,7 +82,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'empty'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -104,7 +104,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
