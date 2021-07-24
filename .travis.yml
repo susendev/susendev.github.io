@@ -23,4 +23,5 @@ after_success:
   - git config --global user.email 'xingyigua@gmail.com'
   - sed -in-place -e "s/git@/https:\/\/${GITHUB_TOKEN}@/" _config.yml
   - sed -in-place -e "s/github.com:xingyigua/github.com\/xingyigua/" _config.yml
+  - cat _config.yml # 调试用
   - hexo deploy
