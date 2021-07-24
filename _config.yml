@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Remember Nothing
+title: 一瓜的博客
 subtitle: 你的指尖，有改变世界的力量
-description: Matthew
-keywords:
-author: Matthew
+description: 希望通过这个博客，能够将自己的学习成果总结出来，与大家分享交流
+keywords: iOS,Swift
+author: yigua
 language: zh-CN
 timezone:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.jibuzhu.xyz
+url: https://blog.yiguadev.com
 permalink: :year/:month/:day/:title.html
 permalink_defaults:
 pretty_urls:
@@ -108,11 +108,16 @@ theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# deploy:
+#   type: git
+#   repo: https://github.com/xingyigua/xingyigua.github.io.git
+#   branch: [master]
 deploy:
   type: git
-  repo: git@111.229.57.242:/home/git/projects/hexo.git
-  #repo: https://github.com/shushengwang/shushengwang.github.io.git
-  branch: [master]
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm') }}"
+  repo: 
+    github: git@github.com:xingyigua/xingyigua.github.io.git
+  branch: master
 
 permalink_pinyin:
   enable: true

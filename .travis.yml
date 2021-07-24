@@ -1,0 +1,26 @@
+sudo: false
+language: node_js
+node_js:
+  - 15.14.0 # use nodejs v10 LTS
+cache: npm
+branches:
+  only:
+    - source # build source branch only
+git:
+  depth: 1
+  submodules: true
+env:
+  global:
+    - GITHUB_TOKEN: "${GITHUB_TOKEN}"
+before_install:
+  - yarn add -g hexo-cli
+install:
+  - yarn
+script:
+  - hexo generate
+after_success:
+  - git config --global user.name 'yigua'
+  - git config --global user.email 'xingyigua@gmail.com'
+  - sed -in-place -e "s/git@/https:\/\/${GITHUB_TOKEN}@/" _config.yml
+  - sed -in-place -e "s/github.com:xingyigua/github.com\/xingyigua/" _config.yml
+  - hexo deploy

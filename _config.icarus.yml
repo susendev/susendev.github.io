@@ -5,7 +5,7 @@ variant: default
 # Path or URL to the website's logo
 # logo: /uploads/favicon-32x32.png
 logo:
-    text: Remember Nothing
+    text: 一瓜的博客
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -96,7 +96,7 @@ head:
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - ''
     # URL or path to the website's RSS atom.xml
-    rss: 
+    rss: atom.xml
 # Page top navigation bar configurations
 navbar:
     # Navigation menu items
@@ -121,9 +121,9 @@ footer:
         # Attribution 4.0 International:
         #     icon: fab fa-creative-commons-by
         #     url: 'https://creativecommons.org/licenses/by/4.0/'
-        # Download on GitHub:
-        #     icon: fab fa-github
-        #     url: 'https://github.com/ppoffice/hexo-theme-icarus'
+        沪ICP备2021021303号:
+            icon:  ''
+            url: 'https://beian.miit.gov.cn'
 # Article related configurations
 article:
     # Code highlight settings
@@ -160,7 +160,7 @@ search:
 #     shortname: ''
 comment:
     type: utterances
-    repo: matthewerrors/comments
+    repo: xingyigua/comments
     issue_term: title        # 必填项，与issue_number二选一填写
     # issue_number: 100           # 必填项，与issue_term二选一填写，每篇文章对应一个issue，填写前需要手动创建issue
     label:      # 可选填
@@ -191,7 +191,7 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Matthew
+        author: yigua
         # Author title
         author_title: iOS Developer
         # Author's current location
@@ -203,15 +203,15 @@ widgets:
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/matthewerrors'
+        follow_link: 'https://github.com/xingyigua'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/matthewerrors'
+                url: 'https://github.com/xingyigua'
             RSS:
                 icon: fas fa-rss
-                url: /
+                url: /atom.xml
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
