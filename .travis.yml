@@ -13,7 +13,7 @@ env:
   global:
     - GITHUB_TOKEN: "${GITHUB_TOKEN}"
 before_install:
-  - yarn add -g hexo-cli
+  - yarn add hexo-cli -g
 install:
   - yarn
 script:
