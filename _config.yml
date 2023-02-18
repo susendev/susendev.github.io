@@ -1,11 +1,11 @@
-title: 一瓜的博客
+title: susen’s blog
 subtitle: 你的指尖，有改变世界的力量
 description: 希望通过这个博客，能够将自己的学习成果总结出来，与大家分享交流
 keywords: iOS,Swift
-author: yigua
+author: susen
 language: zh-CN
 timezone: null
-url: https://blog.yiguadev.com
+url: https://blog.susen.dev
 permalink: ':year/:month/:day/:title.html'
 permalink_defaults: null
 pretty_urls:
@@ -70,7 +70,7 @@ deploy:
   type: git
   message: 'Site updated: {{ now(''YYYY-MM-DD HH:mm'') }}'
   repo:
-    github: git@github.com:xingyigua/xingyigua.github.io.git
+    github: git@github.com:susendev/susendev.github.io.git
   branch: master
 permalink_pinyin:
   enable: true

@@ -5,7 +5,7 @@ variant: default
 # Path or URL to the website's logo
 # logo: /uploads/favicon-32x32.png
 logo:
-    text: 一瓜的博客
+    text: susen’s blog
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -121,9 +121,9 @@ footer:
         # Attribution 4.0 International:
         #     icon: fab fa-creative-commons-by
         #     url: 'https://creativecommons.org/licenses/by/4.0/'
-        沪ICP备2021021303号:
-            icon:  ''
-            url: 'https://beian.miit.gov.cn'
+        # 沪ICP备2021021303号:
+        #     icon:  ''
+        #     url: 'https://beian.miit.gov.cn'
 # Article related configurations
 article:
     # Code highlight settings
@@ -138,16 +138,16 @@ article:
     # Whether to show estimated article reading time
     readtime: true
     # Article licensing block
-    licenses:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
-        Attribution:
-            icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
-        Noncommercial:
-            icon: fab fa-creative-commons-nc
-            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+    # licenses:
+        # Creative Commons:
+        #     icon: fab fa-creative-commons
+        #     url: 'https://creativecommons.org/'
+        # Attribution:
+        #     icon: fab fa-creative-commons-by
+        #     url: 'https://creativecommons.org/licenses/by/4.0/'
+        # Noncommercial:
+        #     icon: fab fa-creative-commons-nc
+        #     url: 'https://creativecommons.org/licenses/by-nc/4.0/'
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -160,7 +160,7 @@ search:
 #     shortname: ''
 comment:
     type: utterances
-    repo: xingyigua/comments
+    repo: susendev/comments
     issue_term: title        # 必填项，与issue_number二选一填写
     # issue_number: 100           # 必填项，与issue_term二选一填写，每篇文章对应一个issue，填写前需要手动创建issue
     label:      # 可选填
@@ -191,24 +191,24 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: yigua
+        author: susen
         # Author title
         author_title: iOS Developer
         # Author's current location
         location: Shanghai
         # URL or path to the avatar image
-        avatar: /uploads/avatar.jpeg
+        avatar: /uploads/avatar.png
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/xingyigua'
+        follow_link: 'https://github.com/susendev'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/xingyigua'
+                url: 'https://github.com/susendev'
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
