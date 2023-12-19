@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>susen’s blog</title>
+  <icon>https://blog.susen.dev/icon.png</icon>
+  <subtitle>你的指尖，有改变世界的力量</subtitle>
+  <link href="https://blog.susen.dev/atom.xml" rel="self"/>
+  
+  <link href="https://blog.susen.dev/"/>
+  <updated>2023-12-19T08:07:28.096Z</updated>
+  <id>https://blog.susen.dev/</id>
+  
+  <author>
+    <name>susen</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【LeetCode】07 整数反转</title>
+    <link href="https://blog.susen.dev/2023/12/19/leetcode-07-zheng-shu-fan-zhuan.html"/>
+    <id>https://blog.susen.dev/2023/12/19/leetcode-07-zheng-shu-fan-zhuan.html</id>
+    <published>2023-12-19T08:07:28.096Z</published>
+    <updated>2023-12-19T08:07:28.096Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="leetcode" scheme="https://blog.susen.dev/categories/leetcode/"/>
+    
+    
+    <category term="整数反转" scheme="https://blog.susen.dev/tags/%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署 hexo 到 nginx</title>
+    <link href="https://blog.susen.dev/2020/04/19/hexobynginx.html"/>
+    <id>https://blog.susen.dev/2020/04/19/hexobynginx.html</id>
+    <published>2020-04-19T13:25:13.000Z</published>
+    <updated>2020-04-19T13:25:13.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本来博客是使用 GitHub pages ，但近些日子访问贼慢，刚好手里有一台小机器，当然是要用起来（折腾就对了🐶🐶🐶）。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【LeetCode】01 两数之和</title>
+    <link href="https://blog.susen.dev/2019/04/14/lettcode-xi-lie-yi.html"/>
+    <id>https://blog.susen.dev/2019/04/14/lettcode-xi-lie-yi.html</id>
+    <published>2019-04-14T14:43:12.000Z</published>
+    <updated>2019-04-14T14:43:12.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;题&quot;&gt;&lt;a href=&quot;#题&quot; class=&quot;headerlink&quot; title=&quot;题&quot;&gt;&lt;/a&gt;题&lt;/h2&gt;&lt;p&gt;给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。&lt;br&gt;你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。&lt;/p&gt;
+&lt;h2 id=&quot;示例&quot;&gt;&lt;a href=&quot;#示例&quot; class=&quot;headerlink&quot; title=&quot;示例&quot;&gt;&lt;/a&gt;示例&lt;/h2&gt;&lt;p&gt;给定 nums &amp;#x3D; [2, 7, 11, 15], target &amp;#x3D; 9&lt;br&gt;因为 nums[0] + nums[1] &amp;#x3D; 2 + 7 &amp;#x3D; 9&lt;br&gt;所以返回 [0, 1]&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="leetcode" scheme="https://blog.susen.dev/categories/leetcode/"/>
+    
+    
+    <category term="两数之和" scheme="https://blog.susen.dev/tags/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
+    
+  </entry>
+  
+</feed>
